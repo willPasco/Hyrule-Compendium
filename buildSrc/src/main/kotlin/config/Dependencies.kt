@@ -16,4 +16,8 @@ sealed interface Dependencies {
         const val ANDROIDX_APP_COMPAT = "androidx.appcompat:appcompat:${Versions.Libs.ANDROIDX_APP_COMPAT}"
         const val ANDROID_MATERIAL = "com.google.android.material:material:${Versions.Libs.ANDROID_MATERIAL}"
     }
+
+    object Modules: Dependencies {
+        const val DESIGN_SYSTEM = ":design-system"
+    }
 }
