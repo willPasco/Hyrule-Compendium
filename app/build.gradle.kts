@@ -1,46 +1,30 @@
+import config.Config
+import config.Dependencies
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
-android {
-    namespace = "com.example.hyrulecompendium"
-    compileSdk = 33
+apply {
+    from("$rootDir/buildSrc/app_base_application.kts")
+}
 
-    defaultConfig {
-        applicationId = "com.example.hyrulecompendium"
-        minSdk = 26
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
+android{
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile(Config.PROGUARD_OPTIMIZE_FILE),
+                Config.PROGUARD_RULES_FILE
             )
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(Dependencies.Android.ANDROIDX_CORE)
+    implementation(Dependencies.Android.ANDROIDX_APP_COMPAT)
+    implementation(Dependencies.Android.ANDROID_MATERIAL)
 }
