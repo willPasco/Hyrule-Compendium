@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppStandardTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:windowBackground">@color/blue_800</item>
+        <item name="colorAccent">@color/green_300</item>
+        <item name="android:statusBarColor">@color/blue_900</item>
+        <item name="navigationIcon">@drawable/ic_arrow_left</item>
+    </style>
+
+</resources>
