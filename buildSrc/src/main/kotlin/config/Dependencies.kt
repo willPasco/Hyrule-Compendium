@@ -17,6 +17,29 @@ sealed interface Dependencies {
         const val ANDROID_MATERIAL = "com.google.android.material:material:${Versions.Libs.ANDROID_MATERIAL}"
     }
 
+    object Koin: Dependencies {
+        const val ANDROID = "io.insert-koin:koin-android:${Versions.Libs.KOIN_ANDROID}"
+    }
+
+    object LifeCycle: Dependencies {
+        const val VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.Libs.VIEW_MODEL}"
+    }
+
+    object Retrofit: Dependencies {
+        const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.Libs.RETROFIT}"
+        const val MOSHI_CONVERTER = "com.squareup.retrofit2:converter-moshi:${Versions.Libs.RETROFIT}"
+        const val GSON_CONVERTER = "com.squareup.retrofit2:converter-gson:${Versions.Libs.RETROFIT}"
+    }
+
+    object OkHttp: Dependencies {
+        const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:${Versions.Libs.OKHTTP_LOGGING_INTERCEPTOR}"
+    }
+
+    object Moshi: Dependencies {
+        const val KOTLIN = "com.squareup.moshi:moshi-kotlin:${Versions.Libs.MOSHI}"
+        const val ADAPTERS = "com.squareup.moshi:moshi-adapters:${Versions.Libs.MOSHI}"
+    }
+
     object Modules: Dependencies {
         const val DESIGN_SYSTEM = ":design-system"
     }

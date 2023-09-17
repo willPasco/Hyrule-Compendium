@@ -15,5 +15,12 @@ dependencies {
 
     implementation(config.Dependencies.Android.ANDROIDX_CORE)
     implementation(config.Dependencies.Android.ANDROIDX_APP_COMPAT)
-    implementation(config.Dependencies.Android.ANDROID_MATERIAL)
+    implementation(config.Dependencies.OkHttp.LOGGING_INTERCEPTOR)
+
+    api(config.Dependencies.Koin.ANDROID)
+    api(config.Dependencies.LifeCycle.VIEW_MODEL)
+    api(config.Dependencies.Retrofit.RETROFIT)
+    api(config.Dependencies.Retrofit.MOSHI_CONVERTER)
+    api(config.Dependencies.Moshi.KOTLIN)
+    api(config.Dependencies.Moshi.ADAPTERS)
 }

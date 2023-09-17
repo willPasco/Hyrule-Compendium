@@ -18,5 +18,10 @@ sealed interface Versions {
         const val ESPRESSO_CORE = "3.5.1"
         const val ANDROIDX_CORE = "1.9.0"
         const val ANDROID_MATERIAL = "1.8.0"
+        const val KOIN_ANDROID = "3.1.3"
+        const val VIEW_MODEL = "2.5.1"
+        const val RETROFIT = "2.9.0"
+        const val OKHTTP_LOGGING_INTERCEPTOR = "4.8.1"
+        const val MOSHI = "1.12.0"
     }
 }
