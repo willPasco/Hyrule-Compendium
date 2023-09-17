@@ -16,4 +16,7 @@ dependencies {
     implementation(Dependencies.Android.ANDROIDX_APP_COMPAT)
     implementation(Dependencies.Android.ANDROID_MATERIAL)
     implementation(project(mapOf("path" to Dependencies.Modules.DESIGN_SYSTEM)))
+    implementation(project(mapOf("path" to Dependencies.Modules.DATA_LIST)))
+    implementation(project(mapOf("path" to Dependencies.Modules.CORE)))
+    implementation(project(mapOf("path" to Dependencies.Modules.COMMONS)))
 }
