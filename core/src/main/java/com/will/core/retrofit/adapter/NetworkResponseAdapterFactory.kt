@@ -20,7 +20,7 @@ class NetworkResponseAdapterFactory : CallAdapter.Factory(){
 
         val responseType = getParameterUpperBound(0, returnType)
 
-        check(getRawType(responseType) != NetworkResponse::class.java){
+        check(getRawType(responseType) == NetworkResponse::class.java){
             "response type is not a Network Response"
         }
 

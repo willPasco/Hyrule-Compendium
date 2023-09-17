@@ -9,13 +9,13 @@ sealed interface NetworkResponse<out O> {
 
     fun toResult(): ResultWrapper<O> =
         when (this) {
-            is NetworkResponse.Success -> ResultWrapper.Success(this.value)
-            is NetworkResponse.Empty -> try {
+            is Success -> ResultWrapper.Success(this.value)
+            is Empty -> try {
                 ResultWrapper.Success(Unit as O)
             } catch (e: Exception) {
                 ResultWrapper.Error("No data content")
             }
-            is NetworkResponse.Error -> ResultWrapper.Error(error)
+            is Error -> ResultWrapper.Error(error)
         }
 
 }
