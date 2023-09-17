@@ -8,7 +8,7 @@ apply {
 }
 
 android {
-    namespace = "com.will.design-system"
+    namespace = "com.will.design_system"
 }
 
 dependencies {
