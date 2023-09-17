@@ -14,7 +14,7 @@ sealed interface Versions {
     object Libs: Versions {
         const val ANDROIDX_APP_COMPAT = "1.6.1"
         const val JUNIT = "4.13.2"
-        const val ANDROIDX_JUNIT = "4.13.2"
+        const val ANDROIDX_JUNIT = "1.1.5"
         const val ESPRESSO_CORE = "3.5.1"
         const val ANDROIDX_CORE = "1.9.0"
         const val ANDROID_MATERIAL = "1.8.0"
