@@ -17,3 +17,5 @@ rootProject.name = "Hyrule Compendium"
 include(":app")
 include(":design-system")
 include(":core")
+include(":data-list")
+include(":commons")

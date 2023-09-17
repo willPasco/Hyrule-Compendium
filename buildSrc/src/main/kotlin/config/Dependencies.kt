@@ -42,5 +42,7 @@ sealed interface Dependencies {
 
     object Modules: Dependencies {
         const val DESIGN_SYSTEM = ":design-system"
+        const val CORE = ":core"
+        const val COMMONS = ":commons"
     }
 }
