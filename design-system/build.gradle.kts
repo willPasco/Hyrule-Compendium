@@ -16,4 +16,7 @@ dependencies {
     implementation(config.Dependencies.Android.ANDROIDX_CORE)
     implementation(config.Dependencies.Android.ANDROIDX_APP_COMPAT)
     implementation(config.Dependencies.Android.ANDROID_MATERIAL)
+    api(config.Dependencies.Navigation.UI)
+    api(config.Dependencies.Navigation.FRAGMENT)
+    api(config.Dependencies.Navigation.DYNAMIC)
 }

@@ -23,5 +23,6 @@ sealed interface Versions {
         const val RETROFIT = "2.9.0"
         const val OKHTTP_LOGGING_INTERCEPTOR = "4.8.1"
         const val MOSHI = "1.12.0"
+        const val NAVIGATION = "2.5.3"
     }
 }

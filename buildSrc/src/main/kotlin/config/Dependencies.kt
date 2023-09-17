@@ -40,8 +40,15 @@ sealed interface Dependencies {
         const val ADAPTERS = "com.squareup.moshi:moshi-adapters:${Versions.Libs.MOSHI}"
     }
 
+    object Navigation: Dependencies {
+        const val FRAGMENT = "androidx.navigation:navigation-fragment-ktx:${Versions.Libs.NAVIGATION}"
+        const val UI = "androidx.navigation:navigation-ui-ktx:${Versions.Libs.NAVIGATION}"
+        const val DYNAMIC = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.Libs.NAVIGATION}"
+    }
+
     object Modules: Dependencies {
         const val DESIGN_SYSTEM = ":design-system"
+        const val DATA_LIST = ":data-list"
         const val CORE = ":core"
         const val COMMONS = ":commons"
     }
