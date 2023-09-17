@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Hyrule Compendium"
 include(":app")
 include(":design-system")
+include(":core")
