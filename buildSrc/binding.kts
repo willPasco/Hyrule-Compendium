@@ -1,8 +1,5 @@
-import config.Versions.AndroidConfig
-
 apply {
-    from("$rootDir/buildSrc/binding.kts")
-    from("$rootDir/buildSrc/module_default_config.kts")
+    from("$rootDir/buildSrc/app_default_config.kts")
     from("$rootDir/buildSrc/build_types.kts")
     from("$rootDir/buildSrc/compile_options.kts")
     from("$rootDir/buildSrc/kotlin_options.kts")
@@ -11,5 +8,13 @@ apply {
 }
 
 android {
-    compileSdk = AndroidConfig.COMPILE_SDK
+    viewBinding {
+        enabled = true
+    }
+    viewBinding {
+        enabled = true
+    }
+    dataBinding {
+        enabled = true
+    }
 }

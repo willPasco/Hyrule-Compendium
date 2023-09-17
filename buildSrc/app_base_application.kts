@@ -1,4 +1,5 @@
 apply {
+    from("$rootDir/buildSrc/binding.kts")
     from("$rootDir/buildSrc/app_default_config.kts")
     from("$rootDir/buildSrc/build_types.kts")
     from("$rootDir/buildSrc/compile_options.kts")
