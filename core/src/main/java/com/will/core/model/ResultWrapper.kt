@@ -16,15 +16,17 @@ sealed class ResultWrapper<out O> {
     fun getData(): O = (this as Success).value
     fun getError() = (this as Error).message
 
-    fun onSuccess(action: (value: O) -> Unit) {
+    fun onSuccess(action: (value: O) -> Unit) : ResultWrapper<O>{
         if(isSuccess()){
             action(getData())
         }
+        return this
     }
 
-    fun onError(action: (value: String) -> Unit) {
+    fun onError(action: (value: String) -> Unit): ResultWrapper<O> {
         if(isError()){
             action(getError())
         }
+        return this
     }
 }
